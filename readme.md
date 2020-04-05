@@ -1,6 +1,6 @@
 **Smart Garage Opener**
 
-- Create an account with in Amazone AWS
+- Create an account with in Amazon AWS [follow](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 - Install [aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) and [configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) it
 - Follow the readme with in individual directories
   * Launch AWS services by reading the instructions in terraform directory readme
