@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Smart Garrage App</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="root"></div>
+  <div id="post">
+    <div class="card" id="statusPost">
+      <h1>Current Status</h1>
+      <h2 id="p1"></h2>
+    </div>
+    <div class="card" id="timePost">
+      <h1>Time Ocurred</h1>
+      <h2 id="p2"></h2>
+    </div>
+  </div>
+  <div id="requestButtons" class="container">
+    <button id="openButton" class="openbutton card" onclick="openDoor();"><h2>OPEN</h2></button>
+    <button id="closeButton" class="closebutton card" onclick="closeDoor();"><h2>CLOSE</h2></button>
+  </div>
+  <table id="table" class="card">
+    <tr class="card">
+      <th>Id</th>
+      <th>Time Occured</th>
+      <th>Status</th>
+    </tr>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>

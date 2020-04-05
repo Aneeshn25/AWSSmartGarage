@@ -1,0 +1,14 @@
+[Unit]
+Description=Smart Garage service
+After=network.target
+
+[Service]
+User=root
+Type=simple
+Restart=always
+Environment=FLASK_APP=/home/pi/smartgarage/fl-app.py
+ExecStart=flask run -h 0.0.0.0 -p 80
+StandardError=append:/home/pi/smartgarage/smartgarage.log
+
+[Install]
+WantedBy=multi-user.target

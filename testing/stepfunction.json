@@ -1,0 +1,32 @@
+{
+    "Comment": "Run the AutoCloseFunction after 30 sec",
+    "StartAt": "Pass",
+    "States": {
+      "Pass": {
+        "Comment": "A Pass state passes its input to its output, without performing work. Pass states are useful when constructing and debugging state machines.",
+        "Type": "Pass",
+        "Next": "Wait 30 sec"
+      },
+      "Wait 30 sec": {
+        "Comment": "A Wait state delays the state machine from continuing for a specified time.",
+        "Type": "Wait",
+        "Seconds": 5,
+        "Next": "Invoke Lambda function"
+      },
+      "Invoke Lambda function": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::lambda:invoke",
+        "Parameters": {
+          "FunctionName": "arn:aws:lambda:us-east-2:847058713959:function:AutoCloseFunction",
+          "Payload": {
+            "Input.$": "$"
+          }
+        },
+        "Next": "Done"
+      },
+      "Done": {
+        "Type": "Pass",
+        "End": true
+      }
+    }
+  }
