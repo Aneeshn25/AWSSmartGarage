@@ -8,6 +8,7 @@ create role terraform_management
 
 create inline policy s3_terraform_state
 
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -32,9 +33,11 @@ create inline policy s3_terraform_state
         }
     ]
 }
+```
 
 create inline policy dynamo_terraform_state
 
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -50,3 +53,4 @@ create inline policy dynamo_terraform_state
         }
     ]
 }
+```
