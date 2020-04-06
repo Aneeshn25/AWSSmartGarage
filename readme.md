@@ -11,4 +11,4 @@ minimal modifications
 - If needed or interested to launch website in k8s follow the kubernetes readme instrutions
 
 - Architecture diagram
-- ![Architecture](./Images/AWSArchitecture.png)
+  ![Architecture](./Images/AWSArchitecture.png)
