@@ -9,3 +9,6 @@ minimal modifications
   * Finally setup the Raspberry pi by following the instructions
 
 - If needed or interested to launch website in k8s follow the kubernetes readme instrutions
+
+- Architecture diagram
+- ![Architecture](./Images/AWSArchitecture.png)
